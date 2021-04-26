@@ -85,7 +85,6 @@ public class ConnectionInformationImpl implements ConnectionInformation {
         return Optional.empty();
     }
 
-    @Override
     public @NotNull Optional<ClientTlsInformation> getClientTlsInformation() {
         return Optional.ofNullable(tlsInformation);
     }
