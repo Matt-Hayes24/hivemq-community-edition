@@ -65,12 +65,10 @@ public class ClientTlsInformationImpl implements ClientTlsInformation, TlsInform
         return certificateChain;
     }
 
-    @Override
     public @NotNull Optional<X509Certificate> getClientCertificate() {
         return Optional.ofNullable(certificate);
     }
 
-    @Override
     public @NotNull Optional<X509Certificate[]> getClientCertificateChain() {
         return Optional.ofNullable(certificateChain);
     }
@@ -85,7 +83,6 @@ public class ClientTlsInformationImpl implements ClientTlsInformation, TlsInform
         return protocol;
     }
 
-    @Override
     public @NotNull Optional<String> getHostname() {
         return Optional.ofNullable(hostname);
     }
