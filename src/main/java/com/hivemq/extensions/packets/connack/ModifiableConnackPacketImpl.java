@@ -142,7 +142,7 @@ public class ModifiableConnackPacketImpl implements ModifiableConnackPacket {
         return Optional.ofNullable(assignedClientId);
     }
 
-    @Override
+    
     public void setAssignedClientIdentifier(final @Nullable String assignedClientIdentifier) {
         PluginBuilderUtil.checkClientIdentifier(assignedClientIdentifier, configurationService.securityConfiguration().validateUTF8());
         if (Objects.equals(this.assignedClientId, assignedClientIdentifier)) {
